@@ -1,0 +1,99 @@
+-DOCUMENTO 1:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE forma_geometrica [
+ <!ELEMENT forma_geometrica (nombre | caracteristicas | numero_de_lados)>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT caracteristicas (color, tipo)
+ <!ELEMENT color (#PCDATA)>
+ <!ELEMENT tipo (#PCDATA)>
+ <!ELEMENT numero_de_lados (#PCDATA)>
+ ]>
+<forma_geometrica>
+ <nombre>rombo</nombre>
+ <caracteristicas>
+    <color>naranja</color>
+    <tipo>plana</tipo>
+ </caracteristicas>
+ <numero_de_lados>4
+
+-DOCUMENTO 2: 
+
+ Document 2 : “Lugares.xml”
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lugares [
+ <!ELEMENT lugares ANY>
+ <!ELEMENT lugar (#PCDATA)*
+ 
+ ]>
+<lugares>En el <lugar>polo norte</lugar> hace mucho frío. Pero, en el <lugar>
+desierto del
+
+-Documento 3
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ciudades [
+ <!ELEMENT ciudades (ciudad)>
+ <!ELEMENT ciudad (nombre, capital)*>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT capital EMPTY>
+ ]>
+<ciudades>
+ <ciudad>
+ <nombre>Buenos Aires</nombre>
+ <capital/>
+ </ciudad>
+ <ciudad>
+ <nombre>Liverpool</nombre>
+ </ciudad>
+ <ciudad>
+ <nombre>Osaka</nombre>
+ </ciudad>
+ <ciudad>
+ <nombre>Oslo</nombre>
+ <capital/>
+ </ciudad>
+</ciudades>
+
+
+DOCUMENTO 4:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE socios [
+ <!ELEMENT socios (socio)*>
+ <!ELEMENT socio ((numero | clave)+, nombre, edad)>
+ <!ELEMENT clave (#PCDATA)>
+ <!ELEMENT edad (#PCDATA)>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT numero (#PCDATA)>
+ ]>
+<socios>
+ <socio>
+ <nombre>Ana</nombre>
+ <edad>21</edad>
+ </socio>
+ <socio>
+ <numero>598</numero>
+ <nombre>Iker</nombre>
+ <edad>19</edad>
+ </socio>
+ <socio>
+ <clave>hY75Du</clave>
+ <nombre>Iker</nombre>
+ </socio>
+</socios>
+
+
+-DOCUMENTO 5 :
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE elementos [
+ <!ELEMENT elementos ( any+, vacio)>
+ <!ELEMENT any (EMPTY)>
+ <!ELEMENT vacío (EMPTY)>
+ ]>
+
+<elementos>
+ <any/>
+ <vacio/>
+</elementos>
