@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Facturas [
+        <!ELEMENT Facturas (Factura)>
+        <!ELEMENT Factura (Datos_emisor, Datos_Cliente, Detalle_Factura+, Importe)>
+        <!ATTLIST Factura Numero NMTOKEN #Required>
+        <!ATTLIST Factura Fecha NMTOKEN #Required>
+        <!ELEMENT Datos_emisor EMPTY>
+        <!ATTLIST Datos_emisor nombre CDATA #REQUIRED>
+        <!ATTLIST Datos_emisor CIF NMTOKEN #REQUIRED>
+        <!ATTLIST Datos_emisor Teléfono NMTOKEN #REQUIRED>
+        <!ELEMENT Datos_Cliente EMPTY>
+        <!ATTLIST Datos_Cliente nombre CDATA #REQUIRED>
+        <!ATTLIST Datos_Cliente CIF NMTOKEN #REQUIRED>
+        <!ATTLIST Datos_Cliente Teléfono NMTOKEN #REQUIRED>
+        <!ELEMENT Importe (#PCDATA)>
+        <!ELEMENT Detalle_Factura (Descripción, Cantidad, Oferta, PVP)>
+        <!ATTLIST Detalle_Factura Codigo NMTOKEN #REQUIRED>
+        <!ATTLIST Detalle_Factura TIPO (Libro|DVD|Varios )#IMPLIED>
+        <!ELEMENT Descripción (#PCDATA)>
+        <!ELEMENT Cantidad (#PCDATA)>
+        <!ELEMENT Oferta EMPTY>
+        <!ELEMENT PVP EMPTY>
+        <!ATLLIST PVP precio NMTOKEM #REQUIRED>
+
+
+        <Facturas>
+           <Factura Numero="27" Fecha="18/12/2025">
+              <Datos_emisor nombre="Libreria Perez" CIF="44555666B" Telefono="777888999"/>
+              <Datos_cliente nombre="Biblioteca Txantrea" CIF="33111222A" Telefono="33399944"/>
+              <Importe>85</Importe>
+              <Detalle_Factura Codigo="AW7" Tipo="Libro">
+                <Descripción>Analitica Web 2.0</Descripción>
+                <Cantidad>1</Cantidad>
+                <Oferta></Oferta>
+                <PVP precio="25"></PVP>
+              </Detalle_Factura>
+              <Detalle_Factura Codigo="CP5" Tipo="DVD">
+                <Descripción>Curso de HTML</Descripción>
+                 <Cantidad>2</Cantidad>
+                 <PVP precio="30"></PVP>
+              </Detalle_Factura>
+           </Factura>
+        </Facturas>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ]

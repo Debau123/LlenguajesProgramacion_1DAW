@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE cine [
-        <!ELEMENT cine (peliculas actores)*>
+        <!ELEMENT cine (peliculas, actores)>
         <!ELEMENT peliculas (pelicula)*>
         <!ELEMENT pelicula (#PCDATA)>
         <!ATTLIST pelicula codpel (P1 | P2 | P3 | P4 | P5) "P0" #IMPLIED>
         <!ELEMENT actores (actor)*>
         <!ELEMENT actor (#PCDATA)>
         <!ATTLIST actor filmografia IDREFS #REQUIRED>
-        ]>
+        ]
 <cine>
     <peliculas>
         <pelicula>Avatar</pelicula>
@@ -23,3 +23,11 @@
         <actor filmografia="P4">Tom Cruise</actor>
     </actores>
 </cine>
+
+
+
+
+
+
+
+
