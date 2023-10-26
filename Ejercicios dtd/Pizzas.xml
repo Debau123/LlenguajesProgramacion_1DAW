@@ -16,9 +16,11 @@
         <ingrediente coding="CHO">Chorizo</ingrediente>
         <ingrediente coding="CAL">Calabacín</ingrediente>
         <ingrediente coding="JAM">Jamón de York</ingrediente>
+        <ingrediente coding="ZAM">Zanahoria</ingrediente>
     </ingredientes>
     <tipos>
-        <tipo nombre="Fantástica" ingredientes="CAL"/>
-        <tipo nombre="Sabrosa" ingredientes="CHA"/>
+        <tipo nombre="Fantástica" ingredientes="CAL CHA "/>
+        <tipo nombre="Sabrosa" ingredientes="CHA CHO JAM HUE"/>
     </tipos>
 </pizzas>
+//los idrefs tienen que estar

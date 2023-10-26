@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Facturas [
+        <!ELEMENT Facturas (Factura)>
+        <!ELEMENT Factura (Datos_emisor, Datos_Cliente, Detalle_Factura+)>
+        <!ATTLIST Factura Numero NMTOKEN #REQUIRED>
+        <!ATTLIST Factura Fecha CDATA #REQUIRED>
+        <!ELEMENT Datos_emisor (#PCDATA)>
+        <!ATTLIST Datos_emisor CIF CDATA #REQUIRED>
+        <!ATTLIST Datos_emisor Teléfono NMTOKEN #REQUIRED>
+        <!ELEMENT Datos_Cliente (#PCDATA)>
+        <!ATTLIST Datos_Cliente CIF CDATA #REQUIRED>
+        <!ATTLIST Datos_Cliente Teléfono NMTOKEN #REQUIRED>
+        <!ELEMENT Detalle_Factura (Articulo+)>
+        <!ATTLIST Detalle_Factura Importe NMTOKEN #REQUIRED>
+        <!ELEMENT Articulo ( Descripción, Cantidad, Oferta?, PVP)>
+        <!ATTLIST Articulo Codigo NMTOKEN #REQUIRED>
+        <!ATTLIST Articulo Tipo (Libro|DVD|Varios) #IMPLIED>
+        <!ELEMENT Descripción (#PCDATA)>
+        <!ELEMENT Cantidad (#PCDATA)>
+        <!ELEMENT Oferta EMPTY>
+        <!ELEMENT PVP (#PCDATA)>
+        ]>
+
+<Facturas>
+    <Factura Numero="27" Fecha="18/12/2025">
+        <Datos_emisor CIF="44555666B" Teléfono="77788899"> Llibreria Perez</Datos_emisor>
+        <Datos_Cliente CIF="33111222A" Teléfono="33399444">Bblioteca Txantrea</Datos_Cliente>
+        <Detalle_Factura Importe="85" >
+            <Articulo Codigo="AW7" Tipo="Libro" >
+                <Descripción>Analítica Web 2.0</Descripción>
+                <Cantidad>1</Cantidad>
+                <PVP>25</PVP>
+            </Articulo>
+            <Articulo Codigo="CP5" Tipo="DVD">
+                <Descripción>Curso de HTML</Descripción>
+                <Cantidad>2</Cantidad>
+                <PVP>30</PVP>
+            </Articulo>
+        </Detalle_Factura>
+    </Factura>
+</Facturas>
