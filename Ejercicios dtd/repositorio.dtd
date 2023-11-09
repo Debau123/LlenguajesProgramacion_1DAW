@@ -1,0 +1,28 @@
+<!ELEMENT Repositori_software (software_list)>
+        <!ATTLIST Repositori_software nom CDATA #REQUIRED>
+        <!ATTLIST Repositori_software categoria CDATA #REQUIRED>
+        <!ELEMENT software_list (software+)>
+        <!ELEMENT software (nom, etiquetes, developer, files, companyia)>
+        <!ATTLIST software identificador CDATA #REQUIRED>
+        <!ATTLIST software tipo (free | comercial) "free" >
+        <!ATTLIST software puntuacio (0 | 1 | 2 | 3 | 4 | 5 ) #IMPLIED>
+        <!ELEMENT nom (#PCDATA)>
+        <!ELEMENT etiquetes (#PCDATA)>
+        <!ELEMENT developer (nom, cognom, webpersonal, imatge)>
+        <!ATTLIST developer tipo (freelance | companyia) "freelance">
+        <!ELEMENT cognom (#PCDATA)>
+        <!ELEMENT webpersonal EMPTY>
+        <!ATTLIST webpersonal url CDATA #REQUIRED>
+        <!ELEMENT imatge EMPTY>
+        <!ATTLIST imatge url CDATA #REQUIRED>
+        <!ATTLIST imatge tipus (JPG | PNG) #REQUIRED>
+        <!ELEMENT files (nom, mida, checksum)>
+        <!ATTLIST files fechaupload CDATA #REQUIRED>
+        <!ELEMENT mida (#PCDATA)>
+        <!ATTLIST mida url CDATA #REQUIRED>
+        <!ELEMENT checksum (#PCDATA)>
+        <!ELEMENT companyia (web, adreça, email)>
+        <!ELEMENT web EMPTY>
+        <!ATTLIST web url CDATA #REQUIRED>
+        <!ELEMENT adreça (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>

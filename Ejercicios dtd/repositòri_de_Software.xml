@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Repositori_software SYSTEM "repositorio.dtd">
+<Repositori_software nom="Softonic" categoria="dwg11">
+    <software_list>
+        <software identificador="cd25" tipo="comercial" puntuacio="2">
+            <nom>Windows</nom>
+            <etiquetes>version12.0</etiquetes>
+            <developer tipo="companyia">
+                <nom>bill </nom>
+                <cognom>gates</cognom>
+                <webpersonal url="www.billgates.es"/>
+                <imatge url="www.microsoft.com/imagenes" tipus="PNG"/>
+            </developer>
+            <files fechaupload="22 de octubre del 2024">
+                <nom>Steve Jobs</nom>
+                <mida url="www.apple.es">75gb</mida>
+                <checksum>perfecto</checksum>
+            </files>
+            <companyia>
+                <web url="www.microsoft.com"/>
+                <adreça>Silicon Valley</adreça>
+                <email>microsoft123@hotmail.com</email>
+            </companyia>
+        </software>
+    </software_list>
+</Repositori_software>
+
+
+
+
+

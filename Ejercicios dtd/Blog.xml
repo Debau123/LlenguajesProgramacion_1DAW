@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE blog SYSTEM "P3_DTD_Iñaki-borrego-bau.dtd">
+
+<blog>
+    <categoria identificador="c12" nombre="economia">
+        <noticia identificador="c12a" fecha="1 de Noviembre del 2023" hora="0:23" puntuacion="2">
+            <titulo>La Invistidura a Juicio</titulo>
+            <autor>Marguenda</autor>
+            <enlacenoticia url="https://www.elespanol.com/espana/politica/20231102/sanchez-entrega-erc-posible-referendum-pueblo-catalan-financiacion-bilateral/806669770_0.html"/>
+            <comentarios>
+                <comentario>
+                    <autor>Pedro sanchez</autor>
+                    <fecha>1 de Noviembre del 2023</fecha>
+                    <hora>12.00</hora>
+                    <texto>La investidura traera un nuevo tiempo a España de progreso y podremos culminar las Reformas</texto>
+                </comentario>
+                <comentario>
+                    <autor>Santiago Abascal</autor>
+                    <fecha>2 de Noviembre del 2023</fecha>
+                    <hora>13:00</hora>
+                    <texto>Sanchez vende a separatistas filoetarras España. Que te vote chapote</texto>
+                </comentario>
+            </comentarios>
+        </noticia>
+    </categoria>
+    <categoria identificador="c11" nombre="sociedad">
+        <evento identificador="c11v" fecha="2 de Noviembre del 2023" hora_inicio="11:00" hora_final="13:00" tipo="gratis">
+            <titulo>Coronacion de  Princesa Leonor</titulo>
+            <autor>Pablo iglesias</autor>
+            <lugarevento>Congreso de los diputados</lugarevento>
+            <descripcion>La infame Coranacion de la princesa Leonor se dara hoy en un evento infame para la Democracia aplaudiendo la gran organizacion no democratica incoerencias de España</descripcion>
+        </evento>
+    </categoria>
+    <categoria identificador="c01" nombre="deporte">
+        <evento identificador="c01s" fecha="28 de Octubre del 2023" hora_inicio="21:00">
+            <titulo>Partido Futbol Barça vs Real Madrid</titulo>
+            <autor>Javier Tebas</autor>
+            <lugarevento>Camp nou</lugarevento>
+        </evento>
+    </categoria>
+</blog>

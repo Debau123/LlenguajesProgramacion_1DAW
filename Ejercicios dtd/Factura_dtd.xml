@@ -2,7 +2,7 @@
  <!DOCTYPE facturacio [
  <!ELEMENT facturacio (empresa, factura+)>
  <!ELEMENT empresa (raosocial)>
- <!ELEMENT raosocial (nom, (cognom, cognom?)? adreca, codipostal, poblacio, (NIF | DNI))>
+ <!ELEMENT raosocial (nom, cognom?, adreca, codipostal, poblacio, (NIF | DNI))>
  <!ATTLIST raosocial tipus CDATA #REQUIRED>
  <!ELEMENT nom (#PCDATA)>
  <!ELEMENT cognom (#PCDATA)>
@@ -15,12 +15,12 @@
  <!ATTLIST factura numero CDATA #REQUIRED>
  <!ELEMENT client (raosocial)>
  <!ELEMENT rebut (data, totalrebut, linies)>
- <!ATTLIST rebut numero NVTOKEN #REQUIRED>
+ <!ATTLIST rebut numero CDATA #REQUIRED>
  <!ELEMENT data (#PCDATA)>
  <!ELEMENT totalrebut (#PCDATA)>
  <!ELEMENT linies (producte+)>
  <!ELEMENT producte (descripcio, quantitat, preuunitari)>
- <!ATTLIST producte codi NVTOKEN #REQUIRED>
+ <!ATTLIST producte codi CDATA #REQUIRED>
  <!ELEMENT descripcio (#PCDATA)>
  <!ELEMENT quantitat (#PCDATA)>
  <!ELEMENT preuunitari (#PCDATA)>
@@ -113,7 +113,7 @@
         <client>
             <raosocial tipus="empresa">
                 <nom>MenjaXocolata, SL</nom>
-                <adreca/>
+                <adreca>c/Vall de albaida</adreca>
                 <codipostal>17600</codipostal>
                 <poblacio>Figueres</poblacio>
                 <NIF>A177777777</NIF>

@@ -1,0 +1,30 @@
+<!ELEMENT blog (categoria+)>
+<!ELEMENT categoria (noticia+ | evento*)>
+<!ATTLIST categoria identificador ID #REQUIRED>
+<!ATTLIST categoria nombre CDATA #REQUIRED>
+<!ELEMENT noticia (titulo, autor, enlacenoticia,comentarios, imagenes?, etiquetas?)>
+<!ATTLIST noticia identificador ID #REQUIRED>
+<!ATTLIST noticia fecha CDATA #REQUIRED>
+<!ATTLIST noticia hora NMTOKEN #REQUIRED>
+<!ATTLIST noticia puntuacion (0 | 1 | 2 | 3) #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT enlacenoticia EMPTY>
+<!ATTLIST enlacenoticia url CDATA #REQUIRED>
+<!ELEMENT comentarios (comentario*)>
+<!ELEMENT comentario ( autor, fecha ,hora, texto)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT texto (#PCDATA)>
+<!ELEMENT imagenes EMPTY>
+<!ATTLIST imagenes url CDATA #REQUIRED>
+<!ATTLIST imagenes tipo (png | jpg) #REQUIRED>
+<!ELEMENT etiquetas (#PCDATA)>
+<!ELEMENT evento (titulo, autor, lugarevento, descripcion?)>
+<!ATTLIST evento identificador ID #REQUIRED>
+<!ATTLIST evento fecha CDATA #REQUIRED>
+<!ATTLIST evento hora_inicio NMTOKEN #REQUIRED>
+<!ATTLIST evento hora_final CDATA #IMPLIED>
+<!ATTLIST evento tipo (pago | gratis) #IMPLIED>
+<!ELEMENT lugarevento (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
