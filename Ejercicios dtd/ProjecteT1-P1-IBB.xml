@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Industria_Videojuegos SYSTEM "ProjecteT1-P1-IBB.dtd">
+
+<Industria_Videojuegos>
+    <Videojuegos>
+    <Videojuego Nombre="EAFC24" Codigo="E23" Presupuesto="AAA" Compañia="E12">
+        <genero>Simulador</genero>
+        <plataformas>PC, XBOX, PLAYSATION, Nintendo</plataformas>
+        <distribuidora>Ea</distribuidora>
+        <caracteristicas>El mayor simulador de furbol del año</caracteristicas>
+        <motor_de_juego>Frosbite</motor_de_juego>
+        <foto tipo="png" url="https://www.marca.com/videojuegos/2023/07/10/64ac1ad546163f65988b45d4.html"></foto>
+    </Videojuego>
+    <Videojuego Nombre="Shekiro" Codigo="S23" Presupuesto="AAA" Compañia="F13">
+        <genero> Souls Likes</genero>
+        <plataformas>Pc Xbox Steam Nintendo</plataformas>
+        <distribuidora>Ubisoft</distribuidora>
+        <caracteristicas>Souls Likes ambientado en Japon</caracteristicas>
+        <motor_de_juego>The MT Framework</motor_de_juego>
+        <foto tipo="jpg" url="https://www.hobbyconsolas.com/reportajes/10-cosas-tienes-saber-sekiro-antes-jugar-388713"></foto>
+    </Videojuego>
+    <Videojuego Nombre="Dark souls 3" Codigo="S22" Presupuesto="AAA" Compañia="F13">
+        <genero> Souls Likes</genero>
+        <plataformas>Pc Xbox Steam Nintendo</plataformas>
+        <distribuidora>Ubisoft</distribuidora>
+        <caracteristicas>Souls Likes orientado en un mundo de fantasia</caracteristicas>
+        <motor_de_juego>The MT Framework</motor_de_juego>
+        <foto tipo="jpg" url="https://www.xbox.com/es-ES/games/store/dark-souls-iii-season-pass/C1J39GNKP73L"></foto>
+    </Videojuego>
+    <Videojuego Nombre="Cod Black Ops" Codigo="BL13" Presupuesto="AAA" Compañia="AC13">
+        <genero>FPS</genero>
+        <plataformas>PC Xbos Steam Nintendo</plataformas>
+        <distribuidora>Ubisoft</distribuidora>
+        <caracteristicas>El shotter mas emblematico de la historio</caracteristicas>
+        <motor_de_juego>IW8</motor_de_juego>
+        <foto tipo="png" url="https://www.xbox.com/es-ES/games/store/call-of-duty-black-ops/bvmgcsx6xpc9"/>
+    </Videojuego>
+    <Videojuego Nombre="Halo" Codigo="H1" Presupuesto="AAA" Compañia="BU12">
+        <genero>FPS</genero>
+        <plataformas>XBOX</plataformas>
+        <distribuidora>Microsoft</distribuidora>
+        <caracteristicas>Juego que revoluciono el mundo con un FPS historico con un juego online</caracteristicas>
+        <motor_de_juego>Motor de Juego Halo</motor_de_juego>
+        <foto tipo="png" url="https://www.vidaextra.com/fps/cuanto-tiempo-necesitasteis-para-completar-el-primer-halo-poco-mas-de-hora-y-media-es-suficiente"/>
+    </Videojuego>
+   </Videojuegos>
+    <Compañias>
+        <Compañia codigo="E12" nombre="EA VANCOUVER" videojuego="E23">
+            <Director>Sam Rivera</Director>
+            <año_fundacion>2010</año_fundacion>
+            <Proximo_juego>Ea sports 25</Proximo_juego>
+            <Pais_origen>Canada </Pais_origen>
+            <foto tipo="jpg" url="https://en.wikipedia.org/wiki/EA_Vancouver"></foto>
+        </Compañia>
+        <Compañia codigo="F13" nombre="FromSoftware, Inc." videojuego="S23 S22">
+            <Director>Hidetaka Miyazaki</Director>
+            <año_fundacion>1986</año_fundacion>
+            <Proximo_juego>Elden Ring 2</Proximo_juego>
+            <Pais_origen>Japon</Pais_origen>
+            <foto tipo="png" url="https://www.facebook.com/fromsoftware.jp/?locale=es_LA"></foto>
+        </Compañia>
+        <Compañia codigo="AC13" nombre="Treychard" videojuego="BL13">
+            <Director>David Vonderhaar</Director>
+            <año_fundacion>1996</año_fundacion>
+            <Proximo_juego>Cod</Proximo_juego>
+            <Pais_origen>USA</Pais_origen>
+            <foto tipo="jpg" url="https://callofduty.fandom.com/wiki/Treyarch"/>
+        </Compañia>
+        <Compañia codigo="BU12" nombre="Bungie" videojuego="H1">
+            <Director>Jason Jones</Director>
+            <año_fundacion>1991</año_fundacion>
+            <Proximo_juego>Destiny 3</Proximo_juego>
+            <Pais_origen>USA</Pais_origen>
+            <foto tipo="png" url="https://es.m.wikipedia.org/wiki/Archivo:Bungie_Logo_-_Official.svg"/>
+        </Compañia>
+    </Compañias>
+</Industria_Videojuegos>

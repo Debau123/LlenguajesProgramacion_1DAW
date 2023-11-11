@@ -1,0 +1,24 @@
+        <!ELEMENT Industria_Videojuegos (Videojuegos, Compañias)>
+        <!ELEMENT Videojuegos (Videojuego+)>
+        <!ELEMENT Videojuego (genero, plataformas, distribuidora, caracteristicas, motor_de_juego, foto)>
+        <!ATTLIST Videojuego Nombre CDATA #REQUIRED>
+        <!ATTLIST Videojuego Codigo ID #REQUIRED>
+        <!ATTLIST Videojuego Presupuesto (AAA | AA | Indie) #REQUIRED>
+        <!ATTLIST Videojuego Compañia IDREF #REQUIRED>
+        <!ELEMENT genero (#PCDATA)>
+        <!ELEMENT plataformas (#PCDATA)>
+        <!ELEMENT distribuidora (#PCDATA)>
+        <!ELEMENT caracteristicas (#PCDATA)>
+        <!ELEMENT motor_de_juego (#PCDATA)>
+        <!ELEMENT Compañias (Compañia+)>
+        <!ELEMENT foto EMPTY>
+        <!ATTLIST foto tipo (png | jpg) #REQUIRED>
+        <!ATTLIST foto url CDATA #REQUIRED>
+        <!ELEMENT Compañia (Director, año_fundacion, Proximo_juego, Pais_origen, foto)>
+        <!ATTLIST Compañia codigo ID #REQUIRED>
+        <!ATTLIST Compañia nombre CDATA #REQUIRED>
+        <!ATTLIST Compañia videojuego IDREFS #REQUIRED>
+        <!ELEMENT Director (#PCDATA)>
+        <!ELEMENT año_fundacion (#PCDATA)>
+        <!ELEMENT Proximo_juego (#PCDATA)>
+        <!ELEMENT Pais_origen (#PCDATA)>
