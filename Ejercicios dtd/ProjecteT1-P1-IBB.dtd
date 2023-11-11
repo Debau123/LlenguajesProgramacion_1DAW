@@ -1,6 +1,6 @@
         <!ELEMENT Industria_Videojuegos (Videojuegos, Compañias)>
         <!ELEMENT Videojuegos (Videojuego+)>
-        <!ELEMENT Videojuego (genero, plataformas, distribuidora, caracteristicas, motor_de_juego, foto)>
+        <!ELEMENT Videojuego (genero, plataformas, distribuidora, caracteristicas, motor_de_juego, foto, premios?)>
         <!ATTLIST Videojuego Nombre CDATA #REQUIRED>
         <!ATTLIST Videojuego Codigo ID #REQUIRED>
         <!ATTLIST Videojuego Presupuesto (AAA | AA | Indie) #REQUIRED>
@@ -14,6 +14,7 @@
         <!ELEMENT foto EMPTY>
         <!ATTLIST foto tipo (png | jpg) #REQUIRED>
         <!ATTLIST foto url CDATA #REQUIRED>
+        <!ELEMENT premios (#PCDATA)>
         <!ELEMENT Compañia (Director, año_fundacion, Proximo_juego, Pais_origen, foto)>
         <!ATTLIST Compañia codigo ID #REQUIRED>
         <!ATTLIST Compañia nombre CDATA #REQUIRED>
